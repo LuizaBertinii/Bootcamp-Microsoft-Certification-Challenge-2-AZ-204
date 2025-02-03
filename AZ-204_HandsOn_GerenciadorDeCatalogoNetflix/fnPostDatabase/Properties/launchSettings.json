@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "profiles": {
     "fnPostDatabase": {
@@ -6,4 +7,14 @@
       "launchBrowser": false
     }
   }
+=======
+{
+  "profiles": {
+    "fnPostDatabase": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7113",
+      "launchBrowser": false
+    }
+  }
+>>>>>>> a7fea8e5dbd7ae357cf39236f980a96d190252d0
 }

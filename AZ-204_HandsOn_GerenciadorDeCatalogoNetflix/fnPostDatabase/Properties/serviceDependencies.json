@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "dependencies": {
     "appInsights1": {
@@ -8,4 +9,16 @@
       "connectionId": "AzureWebJobsStorage"
     }
   }
+=======
+{
+  "dependencies": {
+    "appInsights1": {
+      "type": "appInsights"
+    },
+    "storage1": {
+      "type": "storage",
+      "connectionId": "AzureWebJobsStorage"
+    }
+  }
+>>>>>>> a7fea8e5dbd7ae357cf39236f980a96d190252d0
 }

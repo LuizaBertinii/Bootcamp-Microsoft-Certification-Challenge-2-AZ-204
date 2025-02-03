@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "version": "2.0",
     "logging": {
@@ -9,4 +10,17 @@
             "enableLiveMetricsFilters": true
         }
     }
+=======
+{
+    "version": "2.0",
+    "logging": {
+        "applicationInsights": {
+            "samplingSettings": {
+                "isEnabled": true,
+                "excludedTypes": "Request"
+            },
+            "enableLiveMetricsFilters": true
+        }
+    }
+>>>>>>> a7fea8e5dbd7ae357cf39236f980a96d190252d0
 }

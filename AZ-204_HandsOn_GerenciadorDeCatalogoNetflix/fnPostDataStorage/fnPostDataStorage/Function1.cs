@@ -16,7 +16,7 @@ namespace fnPostDataStorage
             _logger = logger;
         }
 
-        [Function("dataStorage")]
+        [Function("fnPostDataStorage")]
         public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequest req)
         {
             _logger.LogInformation("Processando a Imagem no Storage");
@@ -25,6 +25,7 @@ namespace fnPostDataStorage
             {
                 return new BadRequestObjectResult("O cabeçalho 'file-type' é obrigatório");
             }
+
             var fileType = fileTypeHeader.ToString();
             var form = await req.ReadFormAsync();
             var file = form.Files["file"];
@@ -33,6 +34,7 @@ namespace fnPostDataStorage
             {
                 return new BadRequestObjectResult("O arquivo não foi enviado");
             }
+
             string connectionString = Environment.GetEnvironmentVariable("AzureWebJobsStorage");
             string containerName = fileType;
             BlobClient blobClient = new BlobClient(connectionString, containerName, file.FileName);

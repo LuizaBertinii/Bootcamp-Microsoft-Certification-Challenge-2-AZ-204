@@ -1,8 +1,8 @@
 {
   "profiles": {
-    "fnPostDataSta": {
+    "fnPostDataStorage": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7130",
+      "commandLineArgs": "--port 7205",
       "launchBrowser": false
     }
   }
